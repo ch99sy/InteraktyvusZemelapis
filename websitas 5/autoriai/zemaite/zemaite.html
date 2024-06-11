@@ -8,6 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+         *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
 
 .bold {font-weight: bolder;}
 
@@ -20,18 +30,30 @@
 
         #chat1text {z-index: 1 !important;
         color: black;
-    left: 70% !important;
-top: 17% !important;
+    left: 71% !important;
+top: 14% !important;
 text-align: center;
 font-size: 20px;}
 
-#chat1 {z-index: 0;}
 
-        body {
-            background-image: url(../../images/Untitled_design.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+
+#chat1 {z-index: 0;
+    object-fit: contain;
+  max-width: 500px;
+  max-height: 400px;}
+
+      
+  body { background-image: url(https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/images/Untitled_design.png?raw=true);
+                
+                       
+                background-size: cover;
+background-repeat: no-repeat;
+         -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+height: 100vh; /* Keep this line */
+margin: 0; /* Keep this line */
+}
 
         body::after {
             content: "";
@@ -59,7 +81,9 @@ font-size: 24px;}
 } 
 .nuotrauka {align-content: center;
     justify-content: center;
-margin: auto;}
+margin: auto;
+display: flex;
+flex-shrink: 5;}
 
 .tekstas, .nuotrauka { 
     margin: 10px;  
@@ -67,10 +91,7 @@ margin: auto;}
 }
         
 
-        .rotate-y {
-            width: 350px;
-            height: 350px; 
-        }
+    
 
         @keyframes rotateY {
             from {
@@ -96,6 +117,31 @@ margin: auto;}
 body  {
   overflow-x: hidden !important;
 }
+
+#autorius {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+.chatbubble {display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Add styles for the chat bubble container */
+  width: 400px; /* Set a width for the chat bubble */
+  height: 300px; /* Set a height for the chat bubble */
+  background-color: #f0f0f0; /* Add a background color */
+  border-radius: 10px; /* Add a border radius */
+  padding: 20px; /* Add padding to the container */}
+
+  @media (orientation: portrait) {
+    p {font-size: 16px;}
+    #chat1text {font-size: 16px;}
+    #chat1 {height: 300px ;
+    width: 200px;}
+
+  }
+
+
     </style>
 </head>
 <body>
@@ -114,13 +160,13 @@ Julija Beniuševičiūtė-Žymantienė, geriau žinoma kaip Žemaitė, buvo tale
             </p>
         </div>
         <div class="nuotrauka">
-            <img src="zemaite.jpg" alt="Rotating Image" class="rotate-y" id="autorius">
+            <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/zemaite/zemaite.jpg?raw=true" alt="Rotating Image" class="rotate-y" id="autorius">
         </div>
     </div>
 <DIV>
-        <img src="../../images/chat1.png" id="chat1" class="chat">
-        <p class="chat" id="chat1text">Gyvenimo pabaigoje<br> Žemaitė išgyveno vėlyvą meilę 30 metų jaunesniam vyrui, Konstantinui Petrauskui.<br> Jam rašė apie 60 laiškų, siuntė knygas, laikraščius ir mezginius.
-        </p>
+    <p class="chat" id="chat1text">Gyvenimo pabaigoje<br> Žemaitė išgyveno vėlyvą meilę 30 metų jaunesniam vyrui, Konstantinui Petrauskui.<br> Jam rašė apie 60 laiškų, siuntė knygas, laikraščius ir mezginius.
+    </p>
+        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/images/chat1.png?raw=true" class="chat" id="chat1">
     </DIV>
     <script>
         let chat = 0;
