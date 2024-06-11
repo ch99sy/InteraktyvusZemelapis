@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lietuvos autoriai</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <style>
+
+.icon {border: 2px solid black;
+border-radius: 5px;}
+
+
+
+.suggestions {opacity: 0;}
+
+       .btn-group {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+       .highlight {
+            border: 2px solid yellow;
+            box-shadow: 0 0 10px yellow;
+        }
+       .suggestions {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 30%;
+            z-index: 1;
+        }
+       .suggestion {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+       .suggestion:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" id="search-input" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+                            <div class="suggestions" id="suggestions"></div>
+                        </form>
+                    </div>
+                </nav>
+                <h1 class="text-center">Autorių Atlasas</h1>
+                <div class="position-relative m-4">
+                    <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/images/map2.png?raw=true" class="img-fluid2" style="width: 80%; height: auto;" alt="Epic Map">
+                    <!-- Add more images as needed -->
+					
+					<div class="icon-button">
+                    <a href="websitas 5/autoriai/zemaite/zemaite.html" style="position: absolute; top: 22% !important; left: 12% !important;" id="zemaite">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/zemaite/zemaite.jpg?raw=true" style="width: 2rem; height:2rem;" alt="zemaite" data-vardas="Žemaitė" class="icon">
+                    </a></div>
+					
+					<div class="icon-button">
+					<a href="autoriai/simonasdaukantas/simonasdaukantas.html" style="position: absolute; top: 14% !important; left: 13% !important;" id="simonasdaukantas">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/simonasdaukantas/simonasdaukantas.jpg?raw=true" style="width: 2rem; height:2rem;" alt="simonas daukantas" data-vardas="Simonas Daukantas"  class="icon">
+                    </a></div>
+					
+					<div class="icon-button">
+					<a href="autoriai/mariuskatiliskis/mariuskatiliskis.html" style="position: absolute; top: 16% !important; left: 36% !important;" id="marius katiliskis">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/mariuskatiliskis/mariuskatiliskis.jpg?raw=true" style="width: 2rem; height:2rem;" alt="marius katiliskis" data-vardas="Marius Katiliškis" class="icon" >
+                    </a></div>
+					
+					
+					<div class="icon-button">
+					<a href="autoriai/bernardasbrazdzionis/bernardasbrazdzionis.html" style="position: absolute; top: 16% !important; left: 47% !important;" id="bernardasbrazdzionis">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/bernardasbrazdzionis/bernardasbrazdzionis.jpg?raw=true" style="width: 2rem; height:2rem;" alt="bernardasbrazdzionis" data-vardas="Bernardas Brazdžionis" class="icon">
+                    </a></div>
+					
+					
+					<div class="icon-button">
+					<a href="autoriai/jonasbiliunas/jonasbiliunas.html" style="position: absolute; top: 32% !important; left: 55% !important;" id="jonasbiliunas">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/jonasbiliunas/jonasbiliunas.jpg?raw=true" style="width: 2rem; height:2rem;" alt="jonasbiliunas" data-vardas="Jonas Biliūnas" class="icon">
+                    </a></div>
+					
+					<div class="icon-button">
+					<a href="autoriai/antanasstrazdas/antanasstrazdas.html" style="position: absolute; top: 20% !important; left: 60% !important;" id="antanasstrazdas">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/antanasstrazdas/antanasstrazdas.jpg?raw=true" style="width: 2rem; height:2rem;" alt="antanasstrazdas" data-vardas="Antanas Strazdas" class="icon">
+                    </a></div>
+					
+					
+					
+					<div class="icon-button">
+					<a href="autoriai/jurgaivanauskaite/jurgaivanauskaite.html" style="position: absolute; top: 58% !important; left: 57% !important;" id="jurgaivanauskaite">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/jurgaivanauskaite/jurgaivanauskaite.jpg?raw=true" style="width: 2rem; height:2rem;" alt="jurgaivanauskaite" data-vardas="Jurga Ivanauskaitė" class="icon">
+                    </a></div>
+					<div class="icon-button">
+					<a href="autoriai/vincaskreve/vincaskreve.html" style="position: absolute; top: 80% !important; left: 47% !important;" id="vincaskreve">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/vincaskreve/vincaskreve.jpg?raw=true" style="width: 2rem; height:2rem;" alt="vincaskreve" data-vardas="Vincas Krėvė-Mickevičius" class="icon">
+                    </a></div>
+					<div class="icon-button">
+					<a href="autoriai/sigitasgeda/sigitasgeda.html" style="position: absolute; top: 86% !important; left: 37% !important;" id="sigitasgeda">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/sigitasgeda/sigitasgeda.jpg?raw=true" style="width: 2rem; height:2rem;" alt="vincaskreve" data-vardas="Sigitas Geda" class="icon">
+                    </a></div>
+					<div class="icon-button">
+					<a href="autoriai/vincasmykolaitisputinas/vincasmykolaitisputinas.html" style="position: absolute; top: 40% !important; left: 37% !important;" id="sigitasgeda">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/vincasmykolaitisputinas/vincasmykolaitisputinas.jpg?raw=true" style="width: 2rem; height:2rem;" alt="vincasmykolaitisputinas" data-vardas="Vincas Mykolaitis-Putinas" class="icon">
+                    </a></div>
+					<div class="icon-button">
+                    <a href="autoriai/salomejaneris/salomejaneris.html" style="position: absolute; top: 85% !important; left: 23% !important;" id="salomejaneris">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/salomejaneris/salomejaneris.jpg?raw=true" style="width: 2rem; height:2rem;" alt="salomejaneris" data-vardas="Salomėja Nėris" class="icon">
+                    </a></div>
+                    <div class="icon-button">
+                    <a href="autoriai/balyssruoga/balyssruoga.html" style="position: absolute; top: 10% !important; left: 50% !important;" id="balyssruoga">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/balyssruoga/balyssruoga.jpg?raw=true" style="width: 2rem; height:2rem;" alt="balyssruoga" data-vardas="Balys Sruoga" class="icon">
+                    </a></div>
+                    <div class="icon-button">
+                    <a href="autoriai/maironis/maironis.html" style="position: absolute; top: 40% !important; left: 30% !important;" id="maironis">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/maironis/maironis.jpg?raw=true" style="width: 2rem; height:2rem;" alt="maironis" data-vardas="Maironis" class="icon">
+                    </a></div>
+                    <div class="icon-button">
+                    <a href="autoriai/martynasmazvydas/martynasmazvydas.html" style="position: absolute; top: 45% !important; left: 15% !important;" id="martynasmazvydas">
+                        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/autoriai/martynasmazvydas/martynasmazvydas.jpg?raw=true" style="width: 2rem; height:2rem;" alt="martynasmazvydas" data-vardas="Martynas Mažvydas" class="icon">
+                    </a></div>
+
+                    <style>
+                       .text-center {margin-right: 10%;}
+
+                        h1 {color: whitesmoke !important;}
+                        body {background-color: #212858;
+                            background-image: url(./images/Untitled_design.png);
+                        margin-left: 10%;
+                        background-size: cover;
+  background-repeat: no-repeat;}
+                    
+                    #autorius1 {border: solid 1px black;} 
+                    #autorius1:hover {opacity: 0.6;} 
+                    #autorius1:active {opacity: 0.6;
+                    border: solid 1px lightslategray;}  </style>
+                    <!-- Add more images as needed -->
+                </div>
+				
+				<a href="https://www.kahoot.it" type="button" class="btn btn-primary">Click me!</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    const searchInput = document.getElementById('search-input');
+    const searchBtn = document.getElementById('search-btn');
+    const images = document.querySelectorAll('a img');
+    const suggestionsContainer = document.getElementById('suggestions');
+
+    let vardasList = [];
+    images.forEach((image) => {
+        vardasList.push(image.dataset.vardas);
+    });
+
+    searchInput.addEventListener('input', () => {
+        suggestionsContainer.style.opacity = '100%';
+        const searchTerm = searchInput.value.toLowerCase();
+        const filteredVardas = vardasList.filter((vardas) => {
+            const normalizedVardas = vardas.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+            const normalizedSearchTerm = searchTerm.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+            return normalizedVardas.includes(normalizedSearchTerm);
+        });
+        suggestionsContainer.innerHTML = '';
+        filteredVardas.forEach((vardas) => {
+            const suggestion = document.createElement('div');
+            suggestion.className = 'suggestion';
+            suggestion.textContent = vardas;
+            suggestion.addEventListener('click', () => {
+                searchInput.value = vardas;
+                searchBtn.click();
+            });
+            suggestionsContainer.appendChild(suggestion);
+        });
+        if (searchInput.value === '') {
+            suggestionsContainer.style.display = 'none';
+            suggestionsContainer.style.opacity = '0';
+        } else {
+            suggestionsContainer.style.display = 'block';
+        }
+    });
+
+    searchBtn.addEventListener('click', (e) => {
+        suggestionsContainer.style.display = 'none';
+        e.preventDefault();
+        const searchTerm = searchInput.value.toLowerCase();
+        images.forEach((image) => {
+            const imageVardas = image.dataset.vardas.toLowerCase();
+            if (imageVardas.includes(searchTerm)) {
+                image.parentNode.classList.add('highlight');
+            } else {
+                image.parentNode.classList.remove('highlight');
+            }
+        });
+    });
+</script>
+</body>
+</html>
