@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#autorius {object-fit: contain;
+  width: 100%;
+  height: 100%;}
+
+.bold {font-weight: bolder;}
+
+        p {text-align: center;
+        margin: auto;
+    color: #CCCCCC;}
+
+        span {margin: auto;
+        text-align: center;}
+
+        #chat1text {z-index: 1 !important;
+        color: black;
+    left: 70% !important;
+top: 17% !important;
+text-align: center;
+font-size: 16px;}
+
+#chat1 {z-index: 0;}
+
+        body {
+            background-image: url(../../images/Untitled_design.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0); /* Adjust color and opacity */
+            pointer-events: none; /* Allows clicking through the overlay */
+        }
+
+.tekstas {color: white;
+font-size: 24px;}
+
+        .konteineris { 
+            margin: auto;
+            margin-top: 10%;
+    display: grid; 
+    grid-template-columns: 3fr 2fr; 
+    grid-gap: 20px; 
+    border: 3px solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 70%; 
+} 
+.nuotrauka {align-content: center;
+    justify-content: center;
+margin: auto;}
+
+.tekstas, .nuotrauka { 
+    margin: 10px;  
+
+}
+        
+
+        .rotate-y {
+            width: 350px;
+            height: 350px; 
+        }
+
+        @keyframes rotateY {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .chat {
+          
+            opacity: 0;
+            width: 400px;
+            height: 300px;
+         position: absolute;
+            top: 12%;
+            left: 70%;
+        }
+        .konteineris {
+  overflow-x: hidden !important;
+}
+body  {
+  overflow-x: hidden !important;
+}
+    </style>
+</head>
+<body>
+    <nav><a  href="../../index.html"><button>Atgal</button></a></nav>
+    <div class="konteineris">
+        <div class="tekstas">
+            <p>
+                <span class="bold">Antanas Strazdas</span><br>
+                <span>(1760–1833)</span><br>
+                <span>Aprašas</span><br>
+                
+                
+                Žinomiausi kūriniai: Giesmės svietiškos ir šventos (1814 m.).
+                Gimė baudžiauninkų šeimoje Astrave (dabar Margėnai, Rokiškio r.). Studijavo Kurše, vėliau Varnių kunigų seminarijoje. Gyveno ir kūrė įvairiose Lietuvos vietose, daugiausia Kamajuose, kur ir mirė, palaidotas Kamajų kapinėse.
+                A. Strazdas buvo lietuvių poetas ir kunigas, savo kūryboje derinęs liaudies dainų lyrizmą ir maištingą, laisvą dvasią. Jo „Giesmės svietiškos ir šventos“ yra pirmasis originalių lietuviškų eilėraščių rinkinys. Šis rinkinys, turintis devynis eilėraščius ir dvi religines giesmes, davė pradžią lietuviškajai lyrikai. A. Strazdo kūryba tapo daugelio liaudies dainų pagrindu.
+                
+            </p>
+        </div>
+        <div class="nuotrauka">
+            <img src="./antanasstrazdas.jpg" alt="Rotating Image" class="rotate-y" id="autorius">
+        </div>
+    </div>
+<DIV>
+        <img src="../../images/chat1.png" id="chat1" class="chat">
+        <p class="chat" id="chat1text">Antanas Strazdas,<br> nors buvo kunigas,<br> turėjo maištingą ir nepriklausomą prigimtį,<br> dėl ko nuolat susidurdavo su Bažnyčios hierarchijos nepasitenkinimu. 1828 m. jis buvo suspenduotas<br> ir metams uždarytas į Pažaislio vienuolyną<br> už „elgesį ne pagal luomo pašaukimą“
+        </p>
+    </DIV>
+    <script>
+        let chat = 0;
+
+        const zemaiteImage = document.getElementById("autorius");
+        const chat1 = document.getElementById("chat1");
+        const chat1text = document.getElementById("chat1text");
+
+        zemaiteImage.addEventListener("click", function() {
+            chat++;
+            if (chat == 1) {
+                chat1.style.opacity = '1';
+                chat1text.style.opacity = '1';
+                
+
+            } else {
+                chat = 0;
+                chat1.style.opacity = '0';
+                chat1text.style.opacity = '0';
+            }
+            console.log(chat);
+        });
+    </script>
+</body>
+</html>
