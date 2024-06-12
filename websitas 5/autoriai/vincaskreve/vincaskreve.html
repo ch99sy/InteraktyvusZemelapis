@@ -8,16 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      *,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-margin: 0;
-padding: 0;
-}
 
 .bold {font-weight: bolder;}
 
@@ -30,30 +20,18 @@ padding: 0;
 
         #chat1text {z-index: 1 !important;
         color: black;
-    left: 71% !important;
-top: 14% !important;
+    left: 70% !important;
+top: 17% !important;
 text-align: center;
 font-size: 20px;}
 
+#chat1 {z-index: 0;}
 
-
-#chat1 {z-index: 0;
-    object-fit: contain;
-  max-width: 500px;
-  max-height: 400px;}
-
-      
-  body { background-image: url(../../images/Untitled_design.png);
-                
-                       
-                background-size: cover;
-background-repeat: no-repeat;
-         -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-height: 100vh; /* Keep this line */
-margin: 0; /* Keep this line */
-}
+        body {
+            background-image: url(../../images/Untitled_design.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
 
         body::after {
             content: "";
@@ -81,9 +59,7 @@ font-size: 24px;}
 } 
 .nuotrauka {align-content: center;
     justify-content: center;
-margin: auto;
-display: flex;
-flex-shrink: 5;}
+margin: auto;}
 
 .tekstas, .nuotrauka { 
     margin: 10px;  
@@ -91,7 +67,10 @@ flex-shrink: 5;}
 }
         
 
-    
+        .rotate-y {
+            width: 350px;
+            height: 350px; 
+        }
 
         @keyframes rotateY {
             from {
@@ -116,29 +95,23 @@ flex-shrink: 5;}
 }
 body  {
   overflow-x: hidden !important;
-}
-
-#autorius {
-  object-fit: contain;
-  max-width: 100%;
-  max-height: 100%;
-}
-.chatbubble {display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Add styles for the chat bubble container */
-  width: 400px; /* Set a width for the chat bubble */
-  height: 300px; /* Set a height for the chat bubble */
-  background-color: #f0f0f0; /* Add a background color */
-  border-radius: 10px; /* Add a border radius */
-  padding: 20px; /* Add padding to the container */}
-
-  @media (orientation: portrait) {
+}     
+  body { background-image: url(https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/images/Untitled_design.png?raw=true);
+                
+                       
+                background-size: cover;
+background-repeat: no-repeat;
+         -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+height: 100vh; /* Keep this line */
+margin: 0; /* Keep this line */
+}@media (orientation: portrait) {
     p {font-size: 16px;}
     #chat1text {font-size: 16px;
     width: 150px;
-top: 16%;
-left: 68%;
+top: 1% !important;
+left: 55% !important;
 background-color: white;
 color: black;
 border: solid 5px black;
@@ -154,11 +127,6 @@ html {max-width: 1280px;
 max-height: 1400px;}
 
   }
-
- .imgbubble {background-image: url(https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/images/autoriuwallpaperdu.png?raw=true);
-    width: 100%;
-height: auto;
-background-size: cover; opacity: 1 !important;}
     </style>
 </head>
 <body>
