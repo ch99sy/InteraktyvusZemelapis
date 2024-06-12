@@ -9,6 +9,17 @@
     <title>Document</title>
     <style>
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
 .bold {font-weight: bolder;}
 
         p {text-align: center;
@@ -20,18 +31,30 @@
 
         #chat1text {z-index: 1 !important;
         color: black;
-    left: 70% !important;
-top: 17% !important;
+    left: 71% !important;
+top: 14% !important;
 text-align: center;
 font-size: 20px;}
 
-#chat1 {z-index: 0;}
 
-        body {
-            background-image: url(../../images/Untitled_design.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+
+#chat1 {z-index: 0;
+    object-fit: contain;
+  max-width: 500px;
+  max-height: 400px;}
+
+      
+  body { background-image: url(https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/images/Untitled_design.png?raw=true);
+                
+                       
+                background-size: cover;
+background-repeat: no-repeat;
+         -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+height: 100vh; /* Keep this line */
+margin: 0; /* Keep this line */
+}
 
         body::after {
             content: "";
@@ -59,7 +82,9 @@ font-size: 24px;}
 } 
 .nuotrauka {align-content: center;
     justify-content: center;
-margin: auto;}
+margin: auto;
+display: flex;
+flex-shrink: 5;}
 
 .tekstas, .nuotrauka { 
     margin: 10px;  
@@ -67,10 +92,7 @@ margin: auto;}
 }
         
 
-        .rotate-y {
-            width: 350px;
-            height: 350px; 
-        }
+    
 
         @keyframes rotateY {
             from {
@@ -96,6 +118,48 @@ margin: auto;}
 body  {
   overflow-x: hidden !important;
 }
+
+#autorius {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+.chatbubble {display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Add styles for the chat bubble container */
+  width: 400px; /* Set a width for the chat bubble */
+  height: 300px; /* Set a height for the chat bubble */
+  background-color: #f0f0f0; /* Add a background color */
+  border-radius: 10px; /* Add a border radius */
+  padding: 20px; /* Add padding to the container */}
+
+  @media (orientation: portrait) {
+    p {font-size: 16px;}
+    #chat1text {font-size: 16px;
+    width: 150px;
+top: 16%;
+left: 68%;
+background-color: white;
+color: black;
+border: solid 5px black;
+border-radius: 10px;
+padding: 10px;}
+    #chat1 {height: 1px ;
+    width: 1px;
+opacity: 0 !important;}
+    .konteineris {align-content: center;
+    justify-content: center;
+margin: auto;}
+html {max-width: 1280px;
+max-height: 1400px;}
+
+  }
+
+ .body {background-image: url(https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/images/Untitled_design.png?raw=true);
+    width: 100%;
+height: auto;
+background-size: cover; opacity: 1 !important;}
     </style>
 </head>
 <body>
@@ -121,7 +185,7 @@ Yra  labai daug rašęs apie rojų ir pragarą, nors nelabai netikėjo, kad mir�
         </div>
     </div>
 <DIV>
-        <img src="../../images/chat1.png" id="chat1" class="chat">
+        <img src="https://github.com/ch99sy/InteraktyvusZemelapis/blob/main/websitas%205/images/chat1.png?raw=true" id="chat1" class="chat">
         <p class="chat" id="chat1text">S. Geda kartą dūrė peiliu savo<br> suaugusiai dukrai Uršulei. Jo dukra<br> viename interviu minėjo, kad jos tėvas gėdijosi pripažinti, kad turėjo priklausomybę nuo alkoholio. Tai atskleidžia, jog genialūs menininkai nebūtinai yra pavyzdingi visuomenės nariai bei tėvai.
 
         </p>
